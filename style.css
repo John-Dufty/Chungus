@@ -1,0 +1,233 @@
+body.github-folder-selection-wheel-active {
+  filter: brightness(80%);
+}
+
+#github-folder-selection-wheel {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 9999;
+  width: 90%;
+  max-width: 800px;
+  padding: 10px;
+  display: none;
+  font-family: monospace;
+  font-size: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#github-folder-selection-wheel-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+.wheel-item {
+  cursor: pointer;
+  padding: 2px;
+}
+
+.selected {
+  font-weight: bold;
+  background-color: #ccc;
+}
+
+.folder-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.folder-items .wheel-item {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.file-items {
+  display: none;
+}
+
+.file-items.show {
+  display: block;
+}
+
+.folder-item, .file-item {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.files {
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#content-display {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: lime;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
+
+#content-display.visible {
+  display: block;
+}
+body {
+    font-family: 'Courier New', monospace;
+}
+
+.button {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 5px;
+    line-height: 1.2;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+.button.active {
+    background-color: black;
+    color: white;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.wide-button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.half-width-button {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+#setup_content {
+display: none;
+overflow: hidden;
+}
+
+#setup_content.active {
+display: block;
+height: auto;
+}
+
+#wrapper #api_key {
+  width: 40%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+#api_key_wrapper {
+    display: inline;
+    white-space: nowrap;
+}
+
+#api_key {
+    width: 64ch;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+}
+
+#toggle_visibility, #save {
+    font-family: 'Courier New', monospace;
+}
+
+#expand_button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    margin-right: 5px;
+    float: right;
+}
+
+#options_button.active, #toggle_visibility.active {
+    background-color: black;
+    color: white;
+}
+
+#options_button.active #hamburger_icon, #toggle_visibility.active #eye_icon {
+    color: white;
+}
+
+#action_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#author {
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+    display: block;
+    clear: both;
+    text-align: center;
+}
+
+.container {
+    min-width: 64ch;
+}
+
+#hamburger_icon {
+    font-size: 20px;
+    line-height: 1;
+    margin-right: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+#header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#pre {
+    text-align: center;
+}
+
+/* Added CSS rule */
+.hidden {
+  display: none;
+}
+
+#user-guide-instructions li {
+  margin-bottom: 10px;
+}
