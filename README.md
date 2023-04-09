@@ -1,5 +1,7 @@
 # Chungus
 
+Chungus is a powerful Chrome extension designed to enhance the workflow of security professionals by streamlining the process of pulling search data from Github repositories. With Chungus, users can easily search for and retrieve valuable information from Github repositories, allowing them to quickly analyze data and identify potential security threats. This extension offers a convenient and efficient way for security professionals to expedite their search analytics, providing them with the insights they need to make informed decisions and take proactive measures to protect their organization. Whether you are a security analyst, threat hunter, or incident responder, Chungus is an invaluable tool that can help you work faster and more efficiently.
+
 Setup Guide:
 
 1. Copy the repository link for a GitHub repo in the format of user/repo
